@@ -1,19 +1,31 @@
-almoco_favorito = "Arroz com lasanha bolonhesa"
-almoco_preco = 29.9
-orcamento = 210.0
-sobremesa_preco = 4.9
-quantidade_pessoas = 5
+# estrutura for
 
-total = almoco_preco * 5 + sobremesa_preco * 3
-troco = orcamento - total
+andares = 20
 
+for andar in range (1, andares, 1):
+  if andar != 13:
+    print("Andar", andar)
 
 
+#estrutura while
 
-print("O orçamento total é de", 50*3 + 2*30)
-print("O valor total é de", almoco_preco * 5 + sobremesa_preco * 3)
-if (orcamento > total):
-  print("Você tem orçamento para pagar a conta")
-  print("Sobrou", troco, "de troco.")
-else:
-    print("Você terá que lavar os pratos!")
+andarAtual = 1
+andarFinal = 20
+andarProibido = 13
+
+while (andarAtual <= andarFinal):
+    if (andarAtual != andarProibido):
+      print("Andar", andarAtual)
+    andarAtual = andarAtual + 1
+
+
+#estrutura while em ordem decrescente
+
+andarAtual = 20
+andarFinal = 1
+andarProibido = 13
+
+while (andarAtual >= andarFinal):
+    if (andarAtual != andarProibido):
+        print("Andar", andarAtual)
+    andarAtual = andarAtual - 1
